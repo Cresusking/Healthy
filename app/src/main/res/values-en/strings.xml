@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Healthy</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="main_sentence">Sports to stay healthy</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Page de Connexion strings -->
+    <string name="empty_field">You did not fill in all the fields.</string>
+    <string name="connection_failed">Your informations are wrong</string>
+    <string name="inscription_titre">Sign up</string>
+    <string name="confirmation_user">The count is created</string>
+    <string name="label_nom">Your lastname</string>
+    <string name="label_prenom">Firstname</string>
+    <string name="label_email">Email</string>
+    <string name="label_password">Password</string>
+    <string name="label_poids">Your weight in Kg</string>
+    <string name="label_age">How old are you? Only the number</string>
+    <string name="label_rythme_cardiaque">Your heart rate : 60 by default</string>
+    <string name="label_genre">Your gender</string>
+    <string-array name="choix">
+        <item>1 - Man</item>
+        <item>2 - Woman</item>
+    </string-array>
+
+    <string name="age_limite">Your age must be between 1 and 150</string>
+    <string name="btn_connexion">Login</string>
+    <string name="btn_sinscrire">Subscribe</string>
+
+    <string name="btn_inscription">Save</string>
+    <string name="deconnexion_title">Logout</string>
+
+    <!-- Page MainActivity -->
+    <string name="pick_picture">Selected a picture in your gallery</string>
+    <string name="information_title">Information</string>
+    <string name="info_msg1">Press the three horizontal lines at the top left.</string>
+
+    <!-- Page Commencer un Exercice strings -->
+    <string name="start_exo_title">Start an Exercise</string>
+    <string name="btn_valider">Confirm</string>
+    <string name="vitesse">m/s\nSpeed</string>
+    <string name="distance">m\nDistance</string>
+    <string name="time">Travel\ntime</string>
+    <string name="calories">Burned\nCalories</string>
+    <string name="choix_exo_avant">Please choose an exercise type before starting</string>
+    <string name="depart">Departure</string>
+    <string name="finale">Finish</string>
+    <string name="current_position">Current position</string>
+    <string name="save_parcours">Recording your exercise in progress</string>
+    <string name="congratulation">Your Exercise has been saved. Congratulation for the effort</string>
+    <string name="info_msg_2">
+Make sure your position is on the map before starting your exercise, click on the button at the top right for that. For greater accuracy, do not enter a building or tunnel. Good exercise</string>
+
+    <!-- Page Choix de Type d'Exercice strings -->
+    <string name="liste_type_exercice">Please, choose an exercise</string>
+    <string name="choix_exo_title">Choose a type of exercise</string>
+
+    <!-- Page Mes Activités Journalières strings -->
+    <string name="activites_title">My Daily Activities</string>
+    <string name="activites_empty">You have not done any Sports Exercise this day</string>
+    <string name="graphique_elevation">Variation of Altitude during your course</string>
+    <string name="marche">Walk</string>
+    <string name="course">Run</string>
+    <string name="velo">Bicycle</string>
+
+    <!-- Page Gestion du Profil -->
+    <string name="profil_title">Manage my profile</string>
+    <string name="modif_confimation">The count has been updated well</string>
+
+    <!-- Page Statistiques -->
+    <string name="stat_title">Activity Statistics</string>
+
+    <!-- Page Aide strings -->
+    <string name="aide_title">Help</string>
+    <string name="calcul_performance">
+        Each month, Healthy gives you an update on your monthly efforts as well as your performance compared to the previous month.\n\n
+        Example:\nOn the picture above, you lost 100 more calories than the previous month. In other words, the previous month, you lost 600 calories and this month 700 calories.
+    </string>
+
+</resources>

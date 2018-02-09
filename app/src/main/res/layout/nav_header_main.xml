@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@color/color_blue_cober"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <!-- <ImageView
+        android:id="@+id/profil_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/profil_background"
+        app:srcCompat="@mipmap/ic_person_main" /> -->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profil_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/profil_background"
+        app:srcCompat="@mipmap/ic_person_main" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_edit_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_edit"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/nom_prenom_utilisateur"
+        android:layout_alignRight="@+id/profil_image"
+        android:layout_alignEnd="@+id/profil_image"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
+
+    <TextView
+        android:id="@+id/nom_prenom_utilisateur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="Android Studio"
+        android:textSize="@dimen/title_simple_size"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_below="@id/profil_image" />
+
+    <!-- <TextView
+        android:id="@+id/email_utilisateur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="android.studio@android.com" /> -->
+
+</RelativeLayout>

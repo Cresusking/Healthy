@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Healthy</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="main_sentence">Du Sport pour rester en bonne santé</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Paramètres</string>
+
+    <!-- Page de Connexion strings -->
+    <string name="empty_field">Vous n\'avez pas rempli tous les champs.</string>
+    <string name="connection_failed">Vos identifiants ne sont pas bons</string>
+    <string name="inscription_titre">Inscrivez-vous</string>
+    <string name="confirmation_user">L\'Utilisateur a bien été crée</string>
+    <string name="label_nom">Nom de Famille</string>
+    <string name="label_prenom">Prénoms</string>
+    <string name="label_email">Email</string>
+    <string name="label_password">Mot de Passe</string>
+    <string name="label_poids">Votre poids en Kg</string>
+    <string name="label_age">Votre Age. Juste le nombre</string>
+    <string name="label_rythme_cardiaque">Votre rythme cardiaque : 60 par défaut</string>
+    <string name="label_genre">Votre sexe</string>
+    <string-array name="choix">
+        <item>1 - Homme</item>
+        <item>2 - Femme</item>
+    </string-array>
+
+    <string name="age_limite">Votre age doit être compris entre 1 et 150</string>
+    <string name="btn_connexion">Se Connecter</string>
+    <string name="btn_sinscrire">S\'inscrire</string>
+
+    <string name="btn_inscription">Enregistrer</string>
+    <string name="deconnexion_title">Se Déconnecter</string>
+
+    <!-- Page MainActivity -->
+    <string name="pick_picture">Selectionnez une image dans votre galerie.</string>
+    <string name="information_title">Information</string>
+    <string name="info_msg1">Appuyer sur les trois traits horizontaux en haut à gauche</string>
+
+    <!-- Page Commencer un Exercice strings -->
+    <string name="start_exo_title">Commencer un Exercice</string>
+    <string name="btn_valider">Valider</string>
+    <string name="vitesse">m/s\nVitesse</string>
+    <string name="distance">m\nDistance</string>
+    <string name="time">Temps de\nparcours</string>
+    <string name="calories">Calories \nBrulées</string>
+    <string name="choix_exo_avant">Choisissez d\'abord un Exercice avant de commencer</string>
+    <string name="depart">Position de départ</string>
+    <string name="finale">Position Finale</string>
+    <string name="current_position">Votre position actuelle</string>
+    <string name="save_parcours">Enregistrement de votre exercice en cours ...</string>
+    <string name="congratulation">Votre Exercice a bien été enregistré. Bravo pour l\'effort</string>
+    <string name="info_msg_2">Assurez vous que votre position est bien affichée sur la carte avant de commencer votre exercice, cliquez plusieurs fois sur le bouton en haut à droit pour cela. Pour plus de précision, ne rentrez pas dans un bâtiment ou un tunnel. Bon Exercice</string>
+
+    <!-- Page Choix de Type d'Exercice strings -->
+    <string name="liste_type_exercice">Choisissez un Exercice</string>
+    <string name="choix_exo_title">Choix du Type d\'Exercice</string>
+
+    <!-- Page Mes Activités Journalières strings -->
+    <string name="activites_title">Mes Activités Journalières</string>
+    <string name="activites_empty">Vous n\'avez fait aucune Activités Sportives ce jour</string>
+    <string name="graphique_elevation">Variation d\'Altitude durant votre parcours</string>
+    <string name="marche">Marche</string>
+    <string name="course">Course</string>
+    <string name="velo">Vélo</string>
+
+    <!-- Page Gestion du Profil -->
+    <string name="profil_title">Gérer mon profil</string>
+    <string name="modif_confimation">L\'Utilisateur a bien été modifié</string>
+
+    <!-- Page Statistiques -->
+    <string name="stat_title">Statistiques des Activités</string>
+
+    <!-- Page Aide strings -->
+    <string name="aide_title">Aide</string>
+    <string name="calcul_performance">
+        Chaque mois, Healthy vous fait un point sur vos efforts du mois ainsi que votre performance comparativement au mois précédent.\n\n
+        Exemple:\nSur l\'image ci-dessus, vous avez perdu 100 calories de plus que le mois précédent. En d\'autres termes, le mois précédent, vous avez perdu 600 calories et ce mois 700 calories.
+    </string>
+
+</resources>

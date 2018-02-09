@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/background_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="top"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:titleMarginTop="15dp" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_precedent"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_back_black"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/date_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10/2017"
+            android:textSize="@dimen/title_simple_size"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/margin_simple"
+            android:layout_centerInParent="true" />
+
+        <ImageButton
+            android:id="@+id/btn_suivant"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_next_black"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_block"
+        android:layout_margin="@dimen/margin_simple"
+        android:background="@drawable/bordure">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/icon_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_distance" />
+
+                <TextView
+                    android:id="@+id/distance_totale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Distance parcourue"
+                    android:textSize="@dimen/text_simple_size"
+                    android:textStyle="italic"
+                    android:layout_marginLeft="@dimen/margin_simple"
+                    android:layout_marginTop="@dimen/margin_simple" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/icon_calorie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_calorie" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/perf_calorie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Performance en Calorie"
+                        android:textSize="@dimen/text_simple_size"
+                        android:textStyle="italic|bold"
+                        android:layout_marginLeft="@dimen/margin_simple"
+                        android:layout_marginTop="@dimen/margin_simple" />
+
+                    <TextView
+                        android:id="@+id/id_calorie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Performance en Calorie"
+                        android:textSize="@dimen/text_simple_size"
+                        android:textStyle="italic"
+                        android:layout_marginLeft="@dimen/margin_simple"
+                        android:layout_marginTop="@dimen/margin_simple" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/walk_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_walk"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_simple" />
+
+                <TextView
+                    android:id="@+id/walk_nb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="text"
+                    android:textSize="@dimen/title_simple_size"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/margin_simple"
+                    android:layout_below="@id/walk_icon" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/run_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_run"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_simple" />
+
+                <TextView
+                    android:id="@+id/run_nb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="text"
+                    android:textSize="@dimen/title_simple_size"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/margin_simple"
+                    android:layout_below="@id/run_icon" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/bicycle_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_bicycle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_simple" />
+
+                <TextView
+                    android:id="@+id/bicycle_nb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="text"
+                    android:textSize="@dimen/title_simple_size"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/margin_simple"
+                    android:layout_below="@id/bicycle_icon" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="@dimen/activity_vertical_margin" /> -->
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mon_profil"
+            android:icon="@mipmap/ic_person"
+            android:title="@string/profil_title" />
+        <item
+            android:id="@+id/nav_commencer_exercice"
+            android:icon="@drawable/ic_fitness"
+            android:title="@string/start_exo_title" />
+        <item
+            android:id="@+id/nav_mes_activites_du_jour"
+            android:icon="@mipmap/ic_calendar"
+            android:title="@string/activites_title" />
+        <item
+            android:id="@+id/nav_statistiques"
+            android:icon="@mipmap/ic_mutiline_chart"
+            android:title="@string/stat_title" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@mipmap/ic_help"
+            android:title="@string/aide_title" />
+        <item
+            android:id="@+id/nav_deconnexion"
+            android:icon="@mipmap/ic_disconnect"
+            android:title="@string/deconnexion_title" />
+    </group>
+
+    <!-- <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item> -->
+
+</menu>

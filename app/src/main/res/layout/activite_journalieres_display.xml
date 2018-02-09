@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bordure"
+    android:padding="@dimen/padding_block"
+    android:layout_marginTop="@dimen/margin_simple">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icon_activite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_bicycle" />
+
+        <TextView
+            android:id="@+id/titre_activite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nom du Type d'Exercice"
+            android:textSize="@dimen/title_simple_size"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/margin_simple"
+            android:layout_marginTop="@dimen/margin_simple" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icon_date_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_today" />
+
+        <TextView
+            android:id="@+id/date_exercice_debut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="@dimen/text_simple_size"
+            android:textStyle="italic"
+            android:layout_marginLeft="@dimen/margin_simple"
+            android:layout_marginTop="@dimen/margin_simple" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icon_date_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_calendar" />
+
+        <TextView
+            android:id="@+id/date_exercice_fin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="@dimen/text_simple_size"
+            android:textStyle="italic"
+            android:layout_marginLeft="@dimen/margin_simple"
+            android:layout_marginTop="@dimen/margin_simple" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/time_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_time"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_simple" />
+
+            <TextView
+                android:id="@+id/time_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="text"
+                android:textSize="@dimen/title_simple_size"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/margin_simple"
+                android:layout_below="@id/time_icon" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/distance_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_distance"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_simple" />
+
+            <TextView
+                android:id="@+id/distance_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="text"
+                android:textSize="@dimen/title_simple_size"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/margin_simple"
+                android:layout_below="@id/distance_icon" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/calorie_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_calorie"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_simple" />
+
+            <TextView
+                android:id="@+id/calories_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="text"
+                android:textSize="@dimen/title_simple_size"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/margin_simple"
+                android:layout_below="@id/calorie_icon" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

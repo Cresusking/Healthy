@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="130dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/icon_caracterisque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_simple" />
+
+    <TextView
+        android:id="@+id/valeur_carateristique"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom du Type d'Exercice"
+        android:textSize="@dimen/title_simple_size"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/margin_simple"
+        android:layout_below="@id/icon_caracterisque" />
+
+</RelativeLayout>
