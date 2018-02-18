@@ -63,12 +63,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
 
         utilisateur = VariablesGlobales.getInstance().getMaPreference().recupererUtilisateur();
-
+        
+        // Send user without account to sign in activity (ConnexionActivity).
         if(utilisateur == null){
             startActivity(new Intent(this, ConnexionActivity.class));
             finish();
         }
-
+        
+        // Create the app folder to store profile picture
         createFolders();
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -79,7 +81,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
-
+        
+        // It's image in center of main activity 
         image = (ImageView)findViewById(R.id.image);
         image.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,7 +95,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setNavigationItemSelectedListener(this);
 
         profil_image =(CircleImageView) navigationView.getHeaderView(0).findViewById(R.id.profil_image);
-
+        
+        // That allow to pick a picture in gallery as app profile picture
         fab_edit_picture = (FloatingActionButton) navigationView.getHeaderView(0).findViewById(R.id.fab_edit_picture);
         fab_edit_picture.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -108,12 +112,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             }
         });
 
-
+        // Put user lastname and firstname in Navigation header pane
         nom_prenom = (TextView)navigationView.getHeaderView(0).findViewById(R.id.nom_prenom_utilisateur);
         nom_prenom.setText(utilisateur.getPrenom()+" "+utilisateur.getNom());
         chargerProfilImage();
 
-
+        // Check permission for geolocalisation and get it if it's not granted yet
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, PERMISSION_GPS);
         }
@@ -148,11 +152,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
+        
+        // It's allow to navigate to other activities depending on user choice
         if(id == R.id.nav_mon_profil){
             startActivity(new Intent(MainActivity.this, GestionProfilActivity.class));
         } else if (id == R.id.nav_commencer_exercice) {
-            // Handle the camera action
             startActivity(new Intent(MainActivity.this, ChoixDeTypeExerciceActivity.class));
         } else if (id == R.id.nav_mes_activites_du_jour) {
             startActivity(new Intent(MainActivity.this, MesActivitesJournalieresActivity.class));
@@ -161,7 +165,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if(id == R.id.nav_help){
             startActivity(new Intent(MainActivity.this, AideActivity.class));
         } else if (id == R.id.nav_deconnexion) {
-
+            
+            // Sign out process
             MaPreference maPreference = VariablesGlobales.getInstance().getMaPreference();
             maPreference.nettoyerPreference();
             VariablesGlobales.getInstance().setMaPreference(maPreference);
@@ -177,7 +182,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     public void createFolders(){
         File healthDir = new File("/sdcard/Healthy");
-
+        
+        // it check the folder is created and create it if it's not exist
         if(!healthDir.mkdirs()){
             //Toast.makeText(this, "Directory not created", Toast.LENGTH_SHORT).show();
         }
